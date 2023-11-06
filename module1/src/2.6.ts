@@ -1,3 +1,4 @@
+{
 // learning functions
 
 // normal function
@@ -22,8 +23,7 @@ const poorUser ={
 
 
 const arr : number[] = [3, 5, 7];
-
 const newArr : number[] = arr.map((item : number) => item*item);
 
-
+}
 
