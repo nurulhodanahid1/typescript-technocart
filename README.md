@@ -10,3 +10,34 @@
 8. type safety and
 9. less bugs and less testing
 
+# interview answer 2:
+* * Optional Chaining
+Optional chaining operator (?.) allows to access properties or methods of an object without explicitly checking if each level of the chain is null or undefined.
+
+type User = {
+    name: string;
+    address: {
+        city: string;
+        presentAddress: string;
+        permanentAddress?: string;
+    }
+}
+const user : User = {
+    name: "nahid",
+    address: {
+        city: "Gazipur",
+        presentAddress: "Sreepur"
+    }
+}
+const userPermanentAddress = user?.address?.permanentAddress ?? "user permanent address is not available";
+console.log({userPermanentAddress}) //{userPermanentAddress: "user permanent address is not available"}
+
+* * Nullish coalescing operator: 
+Nullish coalescing operator (??) is used to provide a default value for a variable if its current value is null or undefined.
+const isAdmin : null = null;
+const result1 = isAdmin ?? "Normal User";
+console.log({result1}); //{result1: "Normal User"}
+
+# interview answer 3
+
+
