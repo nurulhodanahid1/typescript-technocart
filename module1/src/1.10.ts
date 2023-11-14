@@ -6,6 +6,7 @@
     type Developer = FrontendDeveloper | FullstackDeveloper;
 
     const newDeveloper : FrontendDeveloper = "juniorDeveloper";
+    const newDeveloper2 : Developer = "expertDeveloper";
 
     type User = {
         name: string;
